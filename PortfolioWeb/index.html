@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Hidden by default, animated when in viewport */
+    .reveal {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+
+    /* When revealed */
+    .reveal-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-gray-800">Portfolio</div>
+      <ul class="flex space-x-6">
+        <li><a href="#about" class="text-gray-700 hover:text-gray-900">About</a></li>
+        <li><a href="#projects" class="text-gray-700 hover:text-gray-900">Projects</a></li>
+        <li><a href="#contact" class="text-gray-700 hover:text-gray-900">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-gray-900 text-white py-20 reveal">
+    <div class="container mx-auto text-center">
+      <h1 class="text-5xl font-bold mb-4">Hey there! RJ here and I love Katerine Alam so much</h1>
+      <p class="text-lg mb-8">A Computer Science graduate and currently working as a Healthcare Advocate @ TTEC based in the Philippines</p>
+      <a href="#projects"
+         class="px-8 py-3 bg-indigo-500 hover:bg-indigo-600 rounded-full text-white font-semibold">View My Work</a>
+    </div>
+  </section>
+
+   <!-- About Section -->
+   <section id="about" class="py-20 relative reveal">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div class="md:col-span-1 relative ">
+        <img src="/src/pic.JPG" alt="Your Photo" class="rounded-full object-fill h-full w-full transition ease-in-out delay-150 hover:transform hover:scale-110 hover: duration-500 ..." />
+        <img src="/src/pic2.JPG" alt="Hover Image" class="absolute rounded-full top-0 left-0 w-full h-full opacity-0 hover:opacity-100 hover: duration-700 ..." />
+      </div>
+      <div class="md:col-span-1">
+        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+        <p class="text-lg leading-relaxed mb-6">
+          I'm a passionate web developer with experience in building responsive and engaging websites. I enjoy working
+          with modern web technologies like HTML, CSS, JavaScript, and Tailwind CSS.
+        </p>
+
+        <!-- 2x3 Image Grid (Table) -->
+        <div class="grid place-items-center grid-cols-2 gap-3 ">
+          <!-- Row 1 -->
+          <div class="w-full h-48 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover: duration-500 ...">
+            <a href="https://www.facebook.com/rjcam031/">
+            <img src="/src/logos/734386_facebook_media_online_social_icon.png" alt="Image 1" class="object-contain w-full h-full">
+            </a>
+          </div>
+          <div class="w-full h-48 transition ease-in-out delay-150hover:-translate-y-1 hover:scale-110 hover: duration-500 ...">
+            <a href="https://www.instagram.com/rmmlmrcln/">
+            <img src="/src/logos/insta.png" alt="Image 2" class="object-contain w-full h-full">
+             </a>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="relative w-full h-48 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover: duration-500 ...">
+            <img src="/src/logos/734387_google_media_online_plus_search_icon.png" alt="Image 3" class="object-contain w-full h-full">
+            <div class="absolute rounded-full inset-0 flex justify-center items-center text-white transition-opacity duration-300 opacity-0 hover:opacity-100 font-bold bg-gray-900">
+              rjca.marcelino@gmail.com
+            </div>
+          </div>
+          <div class="w-full h-48 transition ease-in-out delay-150hover:-translate-y-1 hover:scale-110 hover: duration-500 ...">
+            <a href="https://www.linkedin.com/in/rommel-john-christian-marcelino-0991ba27a/">
+            <img src ="/src/logos/linked.png" alt="Image 3" class="object-contain w-full h-full">
+            </a>
+          </div>
+
+  </section>
+  
+  <div class="h-screen flex justify-center items-center dark:bg-gray-800 relative reveal">
+    <div class="max-w-5xl mx-auto w-full">
+
+        <!-- To achieve the desired progress, you can update the 'stroke-dasharray' property. -->
+        <h4 class="text-3xl md:text-5xl dark:text-white font-bold mb-6">Skills</h4>
+
+        <div class="mb-7">
+            <div class="flex justify-between py-1">
+                <span class="text-base text-gray-lite font-semibold dark:text-[#A6A6A6]">Web Design</span>
+                <span class="text-base font-semibold text-gray-lite pr-5 dark:text-[#A6A6A6]">80%</span>
+            </div>
+            <svg class="rc-progress-line" viewBox="0 0 100 1" preserveAspectRatio="none">
+                <path class="rc-progress-line-trail" d="M 0.5,0.5
+         L 99.5,0.5" stroke-linecap="round" stroke="#D9D9D9" stroke-width="1" fill-opacity="0"></path>
+                <path class="rc-progress-line-path" d="M 0.5,0.5
+         L 99.5,0.5" stroke-linecap="round" stroke="#FF6464" stroke-width="1" fill-opacity="0"
+                    style="stroke-dasharray: 79.2px, 100px; stroke-dashoffset: 0px; transition: stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s linear 0s, 0.06s;">
+                </path>
+            </svg>
+        </div>
+
+
+        <div class="mb-7">
+            <div class="flex justify-between py-1">
+                <span class="text-base text-gray-lite font-semibold dark:text-[#A6A6A6]">Customer Service</span>
+                <span class="text-base font-semibold text-gray-lite pr-5 dark:text-[#A6A6A6]">95%</span>
+            </div>
+            <svg class="rc-progress-line" viewBox="0 0 100 1" preserveAspectRatio="none">
+                <path class="rc-progress-line-trail" d="M 0.5,0.5
+         L 99.5,0.5" stroke-linecap="round" stroke="#D9D9D9" stroke-width="1" fill-opacity="0"></path>
+                <path class="rc-progress-line-path" d="M 0.5,0.5
+         L 99.5,0.5" stroke-linecap="round" stroke="#9272D4" stroke-width="1" fill-opacity="0"
+                    style="stroke-dasharray: 94.05px, 100px; stroke-dashoffset: 0px; transition: stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s linear 0s, 0.06s;">
+                </path>
+            </svg>
+        </div>
+
+
+        <div class="mb-7">
+            <div class="flex justify-between py-1">
+                <span class="text-base text-gray-lite font-semibold dark:text-[#A6A6A6]">Backend</span>
+                <span class="text-base font-semibold text-gray-lite pr-5 dark:text-[#A6A6A6]">10%</span>
+            </div>
+            <svg class="rc-progress-line" viewBox="0 0 100 1" preserveAspectRatio="none">
+                <path class="rc-progress-line-trail" d="M 0.5,0.5
+         L 99.5,0.5" stroke-linecap="round" stroke="#D9D9D9" stroke-width="1" fill-opacity="0"></path>
+                <path class="rc-progress-line-path" d="M 0.5,0.5
+         L 99.5,0.5" stroke-linecap="round" stroke="#5185D4" stroke-width="1" fill-opacity="0"
+                    style="stroke-dasharray: 64.35px, 100px; stroke-dashoffset: 0px; transition: stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s linear 0s, 0.06s;">
+                </path>
+            </svg>
+        </div>
+
+
+        <div class="mb-7">
+            <div class="flex justify-between py-1">
+                <span class="text-base text-gray-lite font-semibold dark:text-[#A6A6A6]">Photoshop</span>
+                <span class="text-base font-semibold text-gray-lite pr-5 dark:text-[#A6A6A6]">75%</span>
+            </div>
+            <svg class="rc-progress-line" viewBox="0 0 100 1" preserveAspectRatio="none">
+                <path class="rc-progress-line-trail" d="M 0.5,0.5
+         L 99.5,0.5" stroke-linecap="round" stroke="#D9D9D9" stroke-width="1" fill-opacity="0"></path>
+                <path class="rc-progress-line-path" d="M 0.5,0.5
+         L 99.5,0.5" stroke-linecap="round" stroke="#CA56F2" stroke-width="1" fill-opacity="0"
+                    style="stroke-dasharray: 74.25px, 100px; stroke-dashoffset: 0px; transition: stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s linear 0s, 0.06s;">
+                </path>
+            </svg>
+        </div>
+
+    </div>
+</div>
+
+  <!-- Projects Section -->
+  <section id="projects" class="bg-gray-100 py-20 reveal">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8 text-gray-800">Related Experiences</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <!-- Project 1 -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+          <img src="/src/logos/bsu.png" alt="Project 1" class="w-full h-48 object-contain rounded-t-lg mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Batangas State University-TNEU</h3>
+          <p class="text-gray-600">Bachelor's Degree in Computer Science</p>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+          <img src="/src/logos/camel.png" alt="Project 2" class="w-full h-48 object-contain rounded-t-lg mb-4" />
+          <h3 class="text-xl font-semibold mb-2">TheCamel.Co</h3>
+          <p class="text-gray-600">Interned for a week in a WebSolutions Company wherein I acquired basic grasp of Website designing.</p>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+          <img src="/src/logos/2262490.png" alt="Project 3" class="w-full h-48 object-contain rounded-t-lg mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Wordpress</h3>
+          <p class="text-gray-600">Used Wordpress on one of our project websites in my 3rd year in Computer Science which is heavy on website design.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Projects Section -->
+   <section id="projects" class="bg-gray-100 py-20 reveal">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8 text-gray-800">Work Experience/s</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <!-- Project 1 -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+          <img src="/src/logos/results.jpg" alt="Project 1" class="w-full h-48 object-contain rounded-t-lg mb-4" />
+          <h3 class="text-xl font-semibold mb-2">RESULTS CX- CSR</h3>
+          <p class="text-gray-600">Worked as a Customer Service Representative for Medical Insurance Account</p>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+          <img src="/src/logos/ttec.jpg" alt="Project 2" class="w-full h-48 object-contain rounded-t-lg mb-4" />
+          <h3 class="text-xl font-semibold mb-2">TTEC PH- CSR II</h3>
+          <p class="text-gray-600">Currently working as a Remote WFH Healthcare Advocate</p>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+          <img src="project3.jpg" alt="Project 3" class="w-full h-48 object-cover rounded-t-lg mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Project Title 3</h3>
+          <p class="text-gray-600">Description of the project. A brief summary of what it does and the technologies used.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 reveal">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8 text-gray-800">Get in Touch</h2>
+      <p class="text-lg text-gray-600 mb-8">
+        Interested in working together? Feel free to reach out!
+      </p>
+      <a href="mailto:your-email@example.com"
+         class="px-8 py-3 bg-indigo-500 hover:bg-indigo-600 rounded-full text-white font-semibold">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6 reveal">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Rommel John Christian Marcelino. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Intersection Observer to reveal sections on scroll both ways (down and up)
+    const reveals = document.querySelectorAll('.reveal');
+
+    const options = {
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('reveal-visible');
+        } else {
+          entry.target.classList.remove('reveal-visible'); // Remove class when it leaves viewport
+        }
+      });
+    }, options);
+
+    reveals.forEach(reveal => {
+      observer.observe(reveal);
+    });
+  </script>
+</body>
+</html>
